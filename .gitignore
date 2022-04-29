@@ -2,3 +2,4 @@
 *wandb
 *mlruns
 *outputs
+*.ipynb_checkpoints
