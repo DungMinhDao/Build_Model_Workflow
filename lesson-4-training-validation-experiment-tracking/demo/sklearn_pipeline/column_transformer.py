@@ -17,6 +17,7 @@ df = pd.DataFrame(
      'click': ['yes', 'no', 'no', 'yes']})
 y = df.pop("click")
 X = df
+print(df.head())
 
 # Build a Column transformer
 categorical_preproc = OneHotEncoder()
@@ -32,3 +33,4 @@ preproc = ColumnTransformer(
 )
 pipe = make_pipeline(preproc, LogisticRegression())
 pipe.fit(X, y)
+print(preproc.transform(X))

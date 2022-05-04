@@ -45,3 +45,4 @@ proba = logits[0]
 with open("imagenet_classes.txt", "r") as f:
     classes = [s.strip() for s in f.readlines()]
 print(f"Classification: {classes[proba.argmax()]}")
+print(logits)
