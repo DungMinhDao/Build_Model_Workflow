@@ -1,6 +1,8 @@
 .DS_Store
 *wandb
 *mlruns
+*multirun
 *outputs
 *.ipynb_checkpoints
 *__pycache__
+*inference_artifact.pt
